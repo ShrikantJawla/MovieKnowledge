@@ -22,7 +22,7 @@ let cont = document.getElementById("movie");
 async function getMovie() {
 	let data = document.getElementById("searchbar").value;
 	try {
-		let x = await fetch(`http://www.omdbapi.com/?type=${data}&apikey=ee681166`);
+		let x = await fetch(`http://www.omdbapi.com/?t=${data}&apikey=ee681166`);
         mov = await x.json();
 		console.log(mov);
         if (mov.Response === "True") {
