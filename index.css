@@ -1,0 +1,80 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+*{
+    box-sizing: border-box;
+}
+#navbar{
+    position:sticky;
+    top:0px;
+    width:100%;
+    height: 70px;rgb(44, 43, 43);
+    background-color: rgb(46, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+#navbar>a{
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+}
+#navbar>a:hover{
+    background-color: rgb(63, 61, 61);
+    border-radius: 20%;
+}
+#search{
+    width: 300px;
+    padding: 4px;
+    background-color: white;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+}
+#search>input{
+    width: 90%;
+    border: none;
+    padding: 3px;
+    outline: none;
+}
+#search_icon:hover{
+    color:red;
+    font-size: 17px;
+}
+#movie{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 35%;
+    margin: auto;
+
+}
+#movie>h1{
+    margin-top: 200px;
+}
+#movie>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+#movie>div>div>img{
+    width: 100%;
+}
+#movie>div>p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+    color:red;
+}
+@media all and (max-width:600px){
+    #movie{
+        width: 90%;
+    }
+}
